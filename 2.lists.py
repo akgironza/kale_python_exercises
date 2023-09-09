@@ -94,14 +94,25 @@ for i in eleven:
         print(i)
 
 
-
 # 12. Write a program that appends an element to the end of a list.
 twelve = [36, 632, 155, 350, 746, 642, 113, 534, 9, 34]
 
+def fun_12(int):
+    twelve.append(int)
+    print(twelve)
+
+fun_12(122)
 
 # 13. Write a program that inserts an element at a specific position in a list.
 thirteen = [191, 871, 990, 163, 687, 747, 606, 799, 373, 851]
 element_to_insert = 4
+
+def fun_13(element):
+    thirteen.insert(2, element)
+    print(thirteen)
+
+fun_13(element_to_insert)
+    
 
 
 # 14. Write a program that counts how many times a specific element appears in a list.
@@ -109,7 +120,16 @@ fourteen = [1, 1, 1, 2, 2, 1, 3, 3, 2, 1]
 element_to_count = 1
 
 # try using for loop and conditional
+i = 0
+for num in fourteen:
+    if num == element_to_count:
+        i = i + 1
+    else:
+        continue
+print(i)
+
 # and then try .count() method
+print(fourteen.count(element_to_count))
 
 
 # 15.  Write a program that extracts all even numbers from a list and stores them in even_only:
