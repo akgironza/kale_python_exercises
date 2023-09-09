@@ -23,9 +23,17 @@ four_b = [357, 728, 406, 989, 380, 800, 201, 410, 452, 141]
 four_c = four_a + four_b
 print(four_c)
 
-
 # 5. Write a program that removes a specific element from a list by its value.
 five = [456, 942, 944, 762, 836, 451, 314, 559, 954, 211]
+
+def fun_5(int):
+    if int in five:
+        value = five.index(int)
+        five.pop(value)
+    print(five)
+
+fun_5(456)
+        
 
 # 6. Write a program that removes a specific element from a list by its index.
 six = [993, 245, 896, 250, 226, 313, 918, 877, 793, 695]
