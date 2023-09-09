@@ -1,17 +1,41 @@
 
 # 1. Using the print method, print "Hello World"
+print('Hello World')
 
 # 2. Create variables for the data type below. 
 # Data Types:
 # Int
+dt_int = 1
+
 # Float
+dt_float = 2.0
+
 # String
-# Boolean 
+dt_string = "text"
+
+# Boolean
+dt_boolean1 = True
+
 # Boolean (The other boolean value)
+dt_boolean2 = False
+
 # Lists ( 4 items in list min.)
+dt_list_fruits = ['strawberry', 'banana', 'guava', 'mango', 'blackberry']
+
 # Dictionaries  ( 4 key/value pairs min.)
+dt_dictionary_zoe = {"name": "Zoe", 
+                     "species": "cat", 
+                     "age": "4", 
+                     "favorite_treat": "birds"}
 
 # 3. For each of the variables, use the print method for each variable. To print each varible
+print(dt_int)
+print(dt_float)
+print(dt_string)
+print(dt_boolean1)
+print(dt_boolean2)
+print(dt_list_fruits)
+print(dt_dictionary_zoe)
 
 # 4. Backtick ` in JS are used for Template literals. In a JS file a variable called intVariable and stringVariable exist.
 # They are equal to the int and string variables on step 2.
