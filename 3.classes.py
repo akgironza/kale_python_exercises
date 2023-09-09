@@ -6,8 +6,29 @@
 
 # 2. Instantiate: Create an Object from the Wolf class and use the bark method
 
+class Wolf:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def howl(self):
+        print(f"{self.name} says Ahhhoooo")
+
+wolf1 = Wolf("Freddie", 10)
+wolf1.howl()
+
 # 3. Create a class called Dog. This class will Inherit from the class Wolf. 
 # Define a method called 'fetch' and have it print "Who is a good boy"
+
+class Dog(Wolf):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+    
+    def fetch(self):
+        print(f"{self.name} is a good boy")
+
+dog1 = Dog("Teddi", 5)
+dog1.fetch()
 
 # 4. Instantiate: Create an Object from the Dog class and try the bark method
 
