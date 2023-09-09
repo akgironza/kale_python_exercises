@@ -60,7 +60,8 @@ class Fighter:
         print(f"{self.name} attacks {opponent.name} for {damage} damage")
         
 ryu = Fighter("Ryu", 100, 10, 5)
-ken = Fighter("Ken", 100, 12, 3)
+#ken = Fighter("Ken", 100, 12, 3)
+ken = Fighter("Ken", 100, 10, 5)
 
 while(True):
     ryu.attack(ken)
