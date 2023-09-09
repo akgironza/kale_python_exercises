@@ -13,8 +13,9 @@ print(max(two))
 # for example: [1,2,3] should result in [2,4,6]
 three = [211, 36, 295, 455, 147, 977, 381, 253, 327, 617]
 
-#for num in three:
-#    print(num*2)
+doubled = [num * 2 for num in three]
+
+print(doubled)
 
 # 4. Write a program that concatenates these two list into a single list:
 four_a = [582, 427, 534, 143, 567, 604, 12, 48, 686, 825]
@@ -157,9 +158,22 @@ print(list(reversed(sixteen)))
 # Hint: try a nested loop (2 for in loops) 
 nested_list = [[1, 2, 3], [4, 5], [6, 7, 8]]
 
+flat_list = []
+
+for list in nested_list:
+    for num in list:
+        flat_list.append(num)
+print(flat_list)
+        
+
 
 # 18. Write a program that finds duplicates from the 2 lists below:
 # Hint: try a nested loop (2 for in loops) and use equality
 list1 = [1, 2, 3, 4]
 list2 = [3, 4, 5, 6]
+
+for num in list1:
+    for nums in list2:
+        if num == nums:
+            print(num)
 
