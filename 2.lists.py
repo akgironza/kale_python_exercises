@@ -137,12 +137,19 @@ print(fourteen.count(element_to_count))
 fifteen = [267, 688, 88, 755, 680, 746, 559, 710, 283, 451]
 even_only = []
 
-
+for i in fifteen:
+    if i % 2 == 0:
+        even_only.append(i)
+    else:
+        continue
+print(even_only)
 
 
 # 16. Write a program that reverses this list but does not change the original sixteen variable:
 # The answer is not sixteen.reverse(). 
 sixteen = [378, 763, 856, 566, 847, 795, 313, 540, 67, 219]
+
+print(list(reversed(sixteen)))
 
 
 # 17. Write a flattens this double nested listbelow:
