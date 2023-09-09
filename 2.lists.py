@@ -38,8 +38,17 @@ fun_5(456)
 # 6. Write a program that removes a specific element from a list by its index.
 six = [993, 245, 896, 250, 226, 313, 918, 877, 793, 695]
 
+def fun_6(int):
+    six.pop(int)
+    print(six)
+
+fun_6(1)
+
 # 7. Write a program that sorts a list of numbers in ascending order.
 seven = [887, 106, 368, 603, 35, 455, 728, 449, 108, 47]
+
+seven.sort()
+print(seven)
 
 
 # 8. Write a program that filters out all elements in a list that are less than a specified value.
@@ -47,9 +56,17 @@ seven = [887, 106, 368, 603, 35, 455, 728, 449, 108, 47]
 eight = [309, 122, 27, 240, 453, 174, 193, 649, 804, 171]
 threshold = 200
 
+for i in eight:
+    if i < threshold:
+        to_pop = eight.index(i)
+        eight.pop(to_pop)
+print(eight)
+
 
 # 9. Calculate and print the length (number of elements) of a given list.
 nine = [679, 697, 657, 171, 503, 582, 656, 82, 724, 796]
+
+print(len(nine))
 
 
 # 10. Write a program that take a list and print a subset of its elements by specifying a start and end index.
@@ -57,11 +74,24 @@ ten = [64, 800, 662, 185, 630, 612, 181, 210, 738, 12]
 start_index = 1
 end_index = 4
 
+print(ten[start_index:end_index])
+
+
 # 11. Write a program iterates the list and
 # prints 'FizzBuzz' when divisable by 3 and 5.  
 # prints 'Fizz' when divisable by 3 .  
 # prints 'Buzz' when divisable by 5. 
 eleven = [213, 927, 265, 39, 860, 421, 550, 884, 991, 1500]
+
+for i in eleven:
+    if (i % 3 == 0 and i % 5 == 0):
+        print('FizzBuzz')
+    elif (i % 3 == 0):
+        print ('Fizz')
+    elif (i % 5 == 0):
+        print ('Buzz')
+    else:
+        print(i)
 
 
 
