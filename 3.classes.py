@@ -7,7 +7,7 @@
 # 2. Instantiate: Create an Object from the Wolf class and use the bark method
 
 # 3. Create a class called Dog. This class will Inherit from the class Wolf. 
-# Do not define any methods
+# Define a method called 'fetch' and have it print "Who is a good boy"
 
 # 4. Instantiate: Create an Object from the Dog class and try the bark method
 
