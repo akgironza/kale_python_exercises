@@ -19,6 +19,7 @@ wolf1.howl()
 
 # 3. Create a class called Dog. This class will Inherit from the class Wolf. 
 # Define a method called 'fetch' and have it print "Who is a good boy"
+# 4. Instantiate: Create an Object from the Dog class and try the bark method
 
 class Dog(Wolf):
     def __init__(self, name, age):
@@ -29,8 +30,6 @@ class Dog(Wolf):
 
 dog1 = Dog("Teddi", 5)
 dog1.fetch()
-
-# 4. Instantiate: Create an Object from the Dog class and try the bark method
 
 # 5. Remember the class Fighter from Aug 30th.
 # Change the attack method. 
@@ -43,15 +42,18 @@ dog1.fetch()
 # While the advantage will still be on the first attacker's side the result should be closer to 50/50
 # I like an even match
 
+import random
+
 class Fighter:
-    def __init__(self, name, hp, strength, defence):
+    def __init__(self, name, hp, strength, defense):
         self.name = name
         self.hp = hp
         self.strength = strength
-        self.defence = defence
+        self.defense = defense
         
     def attack(self, opponent):
-        damage = self.strength - opponent.defence
+        # damage = self.strength - opponent.defense
+        damage = random.randrange(0, (self.strength - self.defense))
         if (damage < 0):
             damage = 0
         opponent.hp -= damage
